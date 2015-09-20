@@ -1,6 +1,17 @@
 # map-builder-java
 Builder for Maps.
 
+## Use
+
+```java
+Map<String, String> map = new HashMapBuilder<>()
+  .put(k1, v1)
+  .putAll(otherMap)
+  .put(mapEntry)
+  // ...
+  .build();
+```
+
 ## References
 * [Guava ImmutableMap.Builder](guava-builder)
 * http://stackoverflow.com/a/7345751/851135

@@ -1,7 +1,7 @@
 # map-builder-java
-Builder for `Map`s in Java.
+[Fluent][] [builder][] for `Map`s in Java.
 
-Fluently initialize `Map`s with the builder pattern.
+Easily initialize `Map`s with a [fluent][] form of the [builder pattern][builder].
 No more repeated variable names, static or instance initializer blocks, or double brace initialization.
 
 ## Use
@@ -47,3 +47,5 @@ Map<String, Integer> m = new MapBuilder<>(new LinkedHashMap<String, Integer>())
 * Initialize with list of Objects: https://gist.github.com/shunirr/4577191
 
 [guava-builder]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableMap.Builder.html
+[fluent]: https://en.wikipedia.org/wiki/Fluent_interface
+[builder]: https://en.wikipedia.org/wiki/Builder_pattern

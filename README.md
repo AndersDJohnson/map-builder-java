@@ -1,7 +1,7 @@
 # map-builder-java
 [Fluent][] [builder][] for `Map`s in Java.
 
-Easily initialize `Map`s with a [fluent][] form of the [builder pattern][builder].
+Easily initialize or modify `Map`s with a [fluent][] form of the [builder pattern][builder].
 No more repeated variable names, static or instance initializer blocks, or double brace initialization.
 
 ## Use

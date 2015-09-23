@@ -16,6 +16,7 @@ Map<String, Integer> m = new MapBuilder<String, Integer>()
   .pa( otherMap2 )
   .put( mapEntry )
   .p( mapEntry2 )
+  .remove( k2 )
   // ...
   .build();
 ```

@@ -15,6 +15,11 @@ public class MapBuilder<K,V> {
         this.map = new HashMap<>();
     }
 
+    @SuppressWarnings("unchecked")
+    public MapBuilder(Class<? extends Map> c) throws IllegalAccessException, InstantiationException {
+        this.map = c.newInstance();
+    }
+
     public MapBuilder(Map<K,V> m) {
         this.map = m;
     }

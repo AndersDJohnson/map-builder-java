@@ -58,4 +58,26 @@ public class MapBuilderTest {
         System.out.println(m);
     }
 
+    @Test
+    public void testMapBuilderClass() throws InstantiationException, IllegalAccessException {
+        Animal d = new Dog();
+        Map<String,Animal> m = new MapBuilder<String, Animal>(HashMap.class)
+                .put("a", new Animal())
+                .p("b", d)
+                .putAll(new HashMap<String, Dog>())
+                .put(new AbstractMap.SimpleEntry<>("c", new Animal()))
+                .p(new AbstractMap.SimpleEntry<>("d", new Dog()))
+                // ...
+                .build();
+
+        assertThat(m, Matchers.hasKey("a"));
+        assertThat(m, Matchers.hasKey("b"));
+        assertThat(m, Matchers.hasKey("c"));
+        assertThat(m, Matchers.hasKey("d"));
+
+        assertThat(m, Matchers.hasValue(d));
+
+        System.out.println(m);
+    }
+
 }

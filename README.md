@@ -1,7 +1,7 @@
 # map-builder-java
 Builder for `Map`s in Java.
 
-Fluently initialize Maps with the builder pattern.
+Fluently initialize `Map`s with the builder pattern.
 No more repeated variable names, static or instance initializer blocks, or double brace initialization.
 
 ## Use

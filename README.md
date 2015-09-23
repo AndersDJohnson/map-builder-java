@@ -5,9 +5,10 @@ Builder for Maps.
 
 ```java
 Map<String, String> map = new HashMapBuilder<>()
-  .put(k1, v1)
-  .putAll(otherMap)
-  .put(mapEntry)
+  .put( k1, v1 )
+  .p( k2, v2 )
+  .putAll( otherMap )
+  .put( mapEntry )
   // ...
   .build();
 ```

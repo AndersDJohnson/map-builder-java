@@ -20,6 +20,14 @@ Map<String, Integer> m = new MapBuilder<String, Integer>()
   .build();
 ```
 
+Or, choose a `Map` implementation by passing its class:
+
+```java
+Map<String, Integer> m = new MapBuilder<String, Integer>(LinkedHashMap.class)
+  // ...
+  .build();
+```
+
 Or, pass an existing map. Also allows choice of `Map` implementation:
 
 ```java

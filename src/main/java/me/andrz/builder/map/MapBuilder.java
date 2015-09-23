@@ -24,21 +24,25 @@ public class MapBuilder<K,V> {
         this.map = m;
     }
 
+    public MapBuilder<K,V> put(K k, V v) {
+        map.put(k, v);
+        return this;
+    }
+
     public MapBuilder<K,V> p(K k, V v) {
         return put(k, v);
     }
 
-    public MapBuilder<K,V> put(K k, V v) {
-        map.put(k, v);
-        return this;
+    public MapBuilder<K,V> put(Map.Entry<? extends K, ? extends V>e) {
+        return put(e.getKey(), e.getValue());
     }
 
     public MapBuilder<K,V> p(Map.Entry<? extends K, ? extends V> e) {
         return put(e);
     }
 
-    public MapBuilder<K,V> put(Map.Entry<? extends K, ? extends V>e) {
-        map.put(e.getKey(), e.getValue());
+    public MapBuilder<K,V> putAll(Map<? extends K, ? extends V> m) {
+        map.putAll(m);
         return this;
     }
 
@@ -46,9 +50,30 @@ public class MapBuilder<K,V> {
         return putAll(m);
     }
 
-    public MapBuilder<K,V> putAll(Map<? extends K, ? extends V> m) {
-        map.putAll(m);
+    public MapBuilder<K,V> remove(K k) {
+        map.remove(k);
         return this;
+    }
+
+    public MapBuilder<K,V> r(K k) {
+        return remove(k);
+    }
+
+    public MapBuilder<K,V> remove(K k, V v) {
+        map.remove(k, v);
+        return this;
+    }
+
+    public MapBuilder<K,V> r(K k, V v) {
+        return remove(k, v);
+    }
+
+    public MapBuilder<K,V> remove(Map.Entry<? extends K, ? extends V>e) {
+        return remove(e.getKey(), e.getValue());
+    }
+
+    public MapBuilder<K,V> r(Map.Entry<? extends K, ? extends V> e) {
+        return remove(e);
     }
 
     public Map<K,V> build() {

@@ -67,7 +67,7 @@ public class MapBuilderTest {
                 .putAll(new HashMap<String, Dog>())
                 .put(new AbstractMap.SimpleEntry<>("c", new Animal()))
                 .p(new AbstractMap.SimpleEntry<>("d", new Dog()))
-                // ...
+                        // ...
                 .build();
 
         assertThat(m, Matchers.hasKey("a"));
@@ -76,6 +76,20 @@ public class MapBuilderTest {
         assertThat(m, Matchers.hasKey("d"));
 
         assertThat(m, Matchers.hasValue(d));
+
+        System.out.println(m);
+    }
+
+    @Test
+    public void testMapBuilderRemove() throws InstantiationException, IllegalAccessException {
+        Map<String,Integer> em = new HashMap<>();
+        em.put("a", 1);
+        Map<String,Integer> m = new MapBuilder<String,Integer>(em)
+                .remove("a", 1)
+                .build();
+
+        assertThat(m.keySet(), Matchers.empty());
+        assertThat(m.values(), Matchers.empty());
 
         System.out.println(m);
     }

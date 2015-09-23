@@ -45,6 +45,8 @@ Map<String, Integer> m = new MapBuilder<>(new LinkedHashMap<String, Integer>())
 * http://stackoverflow.com/a/7345751/851135
 * http://stackoverflow.com/a/12228431
 * Initialize with list of Objects: https://gist.github.com/shunirr/4577191
+* Fluent API for Maps: https://gist.github.com/eeichinger/4442854
+* https://code.google.com/p/fluentjava/wiki/GettingStarted#Maps
 
 [guava-builder]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableMap.Builder.html
 [fluent]: https://en.wikipedia.org/wiki/Fluent_interface

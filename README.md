@@ -38,8 +38,8 @@ Map<String, Integer> m = new MapBuilder<>(new LinkedHashMap<String, Integer>())
 ```
 
 ## References
-* [Apache Commons Collections MapUtils#putAll](maputils-putall)
-* [Guava ImmutableMap.Builder](guava-builder)
+* [Apache Commons Collections MapUtils#putAll][maputils-putall]
+* [Guava ImmutableMap.Builder][guava-builder]
 * http://minborgsjavapot.blogspot.com/2014/12/java-8-initializing-maps-in-smartest-way.html
 * https://docs.atlassian.com/jira/6.4.1/com/atlassian/jira/util/collect/MapBuilder.html
 * http://stackoverflow.com/a/8879328/851135
@@ -49,7 +49,7 @@ Map<String, Integer> m = new MapBuilder<>(new LinkedHashMap<String, Integer>())
 * Fluent API for Maps: https://gist.github.com/eeichinger/4442854
 * https://code.google.com/p/fluentjava/wiki/GettingStarted#Maps
 
-[maputils-putall]: https://commons.apache.org/proper/commons-collections/apidocs/org/apache/commons/collections4/MapUtils.html#putAll(java.util.Map, java.lang.Object[])
+[maputils-putall]: https://commons.apache.org/proper/commons-collections/apidocs/org/apache/commons/collections4/MapUtils.html#putAll%28java.util.Map,%20java.lang.Object%5B%5D%29
 [guava-builder]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableMap.Builder.html
 [fluent]: https://en.wikipedia.org/wiki/Fluent_interface
 [builder]: https://en.wikipedia.org/wiki/Builder_pattern

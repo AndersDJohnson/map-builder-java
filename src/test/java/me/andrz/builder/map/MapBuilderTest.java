@@ -85,7 +85,7 @@ public class MapBuilderTest {
         Map<String,Integer> em = new HashMap<String,Integer>();
         em.put("a", 1);
         Map<String,Integer> m = new MapBuilder<String,Integer>(em)
-                .remove("a", 1)
+                .remove("a")
                 .build();
 
         assertThat(m.keySet(), Matchers.empty());

@@ -6,7 +6,54 @@
 
     <groupId>me.andrz</groupId>
     <artifactId>map-builder</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <description>Fluent builder for Maps in Java.</description>
+
+    <properties>
+        <github.user>adjohnson916</github.user>
+        <github.repo>map-builder-java</github.repo>
+        <bintray.user>adjohnson916</bintray.user>
+        <bintray.repo>maven</bintray.repo>
+        <bintray.package>map-builder</bintray.package>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/${github.user}/${github.repo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
+        <url>https://github.com/${github.user}/${github.repo}</url>
+        <tag></tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-adjohnson916-maven</id>
+            <url>https://api.bintray.com/maven/${bintray.user}/${bintray.repo}/${bintray.package}</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-adjohnson916-maven</id>
+            <name>bintray-adjohnson916-maven</name>
+            <url>http://dl.bintray.com/adjohnson916/maven</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-adjohnson916-maven</id>
+            <name>bintray-adjohnson916-maven</name>
+            <url>http://dl.bintray.com/adjohnson916/maven</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -20,5 +67,58 @@
             <version>1.3</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.10.3</version>
+                        <configuration>
+                            <failOnError>false</failOnError>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

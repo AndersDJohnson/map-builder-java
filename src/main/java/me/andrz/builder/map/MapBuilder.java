@@ -59,17 +59,8 @@ public class MapBuilder<K,V> {
         return remove(k);
     }
 
-    public MapBuilder<K,V> remove(K k, V v) {
-        map.remove(k, v);
-        return this;
-    }
-
-    public MapBuilder<K,V> r(K k, V v) {
-        return remove(k, v);
-    }
-
     public MapBuilder<K,V> remove(Map.Entry<? extends K, ? extends V>e) {
-        return remove(e.getKey(), e.getValue());
+        return remove(e.getKey());
     }
 
     public MapBuilder<K,V> r(Map.Entry<? extends K, ? extends V> e) {

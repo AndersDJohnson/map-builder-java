@@ -12,7 +12,7 @@ public class MapBuilder<K,V> {
     private Map<K, V> map;
 
     public MapBuilder() {
-        this.map = new HashMap<>();
+        this.map = new HashMap<K, V>();
     }
 
     @SuppressWarnings("unchecked")

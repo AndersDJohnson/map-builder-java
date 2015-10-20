@@ -32,7 +32,7 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(LinkedHashMap.class)
 Or, pass an existing map to be modified. Also allows choice of `Map` implementation:
 
 ```java
-Map<String, Integer> m = new MapBuilder<>(new LinkedHashMap<String, Integer>())
+Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<String, Integer>())
   // ...
   .build();
 ```

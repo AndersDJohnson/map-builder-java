@@ -23,7 +23,7 @@ public class MapBuilderTest {
                 .put("a", 1)
                 .p("b", 2)
                 .putAll(new HashMap<String, Integer>())
-                .put(new AbstractMap.SimpleEntry<>("c", 3))
+                .put(new AbstractMap.SimpleEntry<String,Integer>("c", 3))
                 // ...
                 .build();
 
@@ -39,12 +39,12 @@ public class MapBuilderTest {
     @Test
     public void testMapBuilderExtends() {
         Animal d = new Dog();
-        Map<String,Animal> m = new MapBuilder<>(new HashMap<String, Animal>())
+        Map<String,Animal> m = new MapBuilder<String,Animal>(new HashMap<String, Animal>())
                 .put("a", new Animal())
                 .p("b", d)
                 .putAll(new HashMap<String, Dog>())
-                .put(new AbstractMap.SimpleEntry<>("c", new Animal()))
-                .p(new AbstractMap.SimpleEntry<>("d", new Dog()))
+                .put(new AbstractMap.SimpleEntry<String,Animal>("c", new Animal()))
+                .p(new AbstractMap.SimpleEntry<String,Animal>("d", new Dog()))
                 // ...
                 .build();
 
@@ -65,8 +65,8 @@ public class MapBuilderTest {
                 .put("a", new Animal())
                 .p("b", d)
                 .putAll(new HashMap<String, Dog>())
-                .put(new AbstractMap.SimpleEntry<>("c", new Animal()))
-                .p(new AbstractMap.SimpleEntry<>("d", new Dog()))
+                .put(new AbstractMap.SimpleEntry<String,Animal>("c", new Animal()))
+                .p(new AbstractMap.SimpleEntry<String,Animal>("d", new Dog()))
                         // ...
                 .build();
 
@@ -82,7 +82,7 @@ public class MapBuilderTest {
 
     @Test
     public void testMapBuilderRemove() throws InstantiationException, IllegalAccessException {
-        Map<String,Integer> em = new HashMap<>();
+        Map<String,Integer> em = new HashMap<String,Integer>();
         em.put("a", 1);
         Map<String,Integer> m = new MapBuilder<String,Integer>(em)
                 .remove("a", 1)

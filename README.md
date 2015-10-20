@@ -1,4 +1,7 @@
 # map-builder-java
+
+[ ![Download](https://api.bintray.com/packages/adjohnson916/maven/map-builder/images/download.svg) ][download]
+
 [Fluent][] [builder][] for `Map`s in Java.
 
 Easily initialize or modify [`java.util.Map`][map] instances with a [DRY][], [fluent][]-style [builder pattern][builder].
@@ -37,6 +40,49 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
   .build();
 ```
 
+# Install
+
+## Maven
+
+```xml
+<repositories>
+    <repository>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <id>bintray-adjohnson916-maven</id>
+        <name>bintray-adjohnson916-maven</name>
+        <url>http://dl.bintray.com/adjohnson916/maven</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>me.andrz</groupId>
+        <artifactId>map-builder</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+</dependencies>
+```
+
+## Gradle
+
+```gradle
+repositories {
+    maven {
+        url  "http://dl.bintray.com/adjohnson916/maven"
+    }
+}
+
+dependencies {
+    compile 'me.andrz:map-builder:1.0.0'
+}
+```
+
+## Manual
+
+[Download JAR from BinTray][download].
+
 ## References
 * [Apache Commons Collections MapUtils#putAll][maputils-putall]
 * [Guava ImmutableMap.Builder][guava-builder]
@@ -57,3 +103,4 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
 [2brace]: http://c2.com/cgi/wiki?DoubleBraceInitialization
 [initblocks]: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
 [map]: https://docs.oracle.com/javase/7/docs/api/java/util/Map.html
+[download]: https://bintray.com/artifact/download/adjohnson916/maven/me/andrz/map-builder/1.0.0/map-builder-1.0.0.jar

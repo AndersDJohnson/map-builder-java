@@ -70,7 +70,7 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
 ```gradle
 repositories {
     maven {
-        url  "http://dl.bintray.com/AndersDJohnson/maven"
+        url  "https://dl.bintray.com/AndersDJohnson/maven"
     }
 }
 

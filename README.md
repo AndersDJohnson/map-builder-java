@@ -52,7 +52,7 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
         </snapshots>
         <id>bintray-AndersDJohnson-maven</id>
         <name>bintray-AndersDJohnson-maven</name>
-        <url>http://dl.bintray.com/AndersDJohnson/maven</url>
+        <url>https://dl.bintray.com/AndersDJohnson/maven</url>
     </repository>
 </repositories>
 

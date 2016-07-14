@@ -12,6 +12,30 @@ http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html
 
     <description>Fluent builder for Maps in Java.</description>
 
+    <developers>
+        <developer>
+            <id>AndersDJohnson</id>
+            <name>Anders Johnson</name>
+            <url>https://andrz.me</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>America/Chicago</timezone>
+            <properties>
+                <picUrl>https://www.gravatar.com/avatar/ab958c9152eb7eaa46104b9df0877ea0</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
     <properties>
         <github.user>AndersDJohnson</github.user>
         <github.repo>map-builder-java</github.repo>

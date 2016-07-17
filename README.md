@@ -12,6 +12,10 @@ No more repeated variable names, [static or instance initializer blocks][initblo
 Build a new map (`HashMap` by default):
 
 ```java
+import me.andrz.builder.map.MapBuilder;
+
+// ...
+
 Map<String, Integer> m = new MapBuilder<String, Integer>()
   .put( k1, v1 )
   .p( k2, v2 )

@@ -86,6 +86,7 @@ http://central.sonatype.org/pages/apache-maven.html
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
                     <localCheckout>true</localCheckout>
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
         </plugins>

@@ -10,6 +10,7 @@ http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <name>me.andrz:map-builder</name>
     <description>Fluent builder for Maps in Java.</description>
 	<url>https://github.com/adjohnson916/map-builder-java</url>
 

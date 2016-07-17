@@ -1,6 +1,6 @@
 # map-builder-java
 
-[ ![Download](https://img.shields.io/maven-central/v/me.andrz/map-builder-java.svg) ][download]
+[ ![Download](https://img.shields.io/maven-central/v/me.andrz/map-builder.svg) ][download]
 
 [Fluent][] [builder][] for `Map`s in Java.
 

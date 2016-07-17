@@ -1,6 +1,6 @@
 # map-builder-java
 
-[ ![Download](https://api.bintray.com/packages/adjohnson916/maven/map-builder/images/download.svg) ][download]
+[ ![Download](https://img.shields.io/maven-central/v/me.andrz/map-builder-java.svg) ][download]
 
 [Fluent][] [builder][] for `Map`s in Java.
 
@@ -45,17 +45,6 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
 ## Maven
 
 ```xml
-<repositories>
-    <repository>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-        <id>bintray-adjohnson916-maven</id>
-        <name>bintray-adjohnson916-maven</name>
-        <url>https://dl.bintray.com/adjohnson916/maven</url>
-    </repository>
-</repositories>
-
 <dependencies>
     <dependency>
         <groupId>me.andrz</groupId>
@@ -68,12 +57,6 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
 ## Gradle
 
 ```gradle
-repositories {
-    maven {
-        url  "https://dl.bintray.com/adjohnson916/maven"
-    }
-}
-
 dependencies {
     compile 'me.andrz:map-builder:1.0.0'
 }
@@ -81,7 +64,7 @@ dependencies {
 
 ## Manual
 
-[Download JAR from BinTray][download].
+[Download JAR from Maven Central][download].
 
 ## References
 * [Apache Commons Collections MapUtils#putAll][maputils-putall]
@@ -103,4 +86,4 @@ dependencies {
 [2brace]: http://c2.com/cgi/wiki?DoubleBraceInitialization
 [initblocks]: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
 [map]: https://docs.oracle.com/javase/7/docs/api/java/util/Map.html
-[download]: https://bintray.com/artifact/download/adjohnson916/maven/me/andrz/map-builder/1.0.0/map-builder-1.0.0.jar
+[download]: https://repo1.maven.org/maven2/me/andrz/map-builder/1.0.0/map-builder-1.0.0.jar

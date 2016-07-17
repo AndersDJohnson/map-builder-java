@@ -25,7 +25,7 @@ http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html
             </roles>
             <timezone>America/Chicago</timezone>
             <properties>
-                <picUrl>https://www.gravatar.com/avatar/ab958c9152eb7eaa46104b9df0877ea0</picUrl>
+                <picUrl>https://www.gravatar.com/avatar/5c44acedb08657aa1bdfc5524e71ff53</picUrl>
             </properties>
         </developer>
     </developers>

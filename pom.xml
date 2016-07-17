@@ -19,6 +19,7 @@ http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html
             <id>AndersDJohnson</id>
             <name>Anders D. Johnson</name>
             <url>https://andrz.me</url>
+            <email>anders.d.johnson.developer@gmail.com</email>
             <roles>
                 <role>developer</role>
             </roles>

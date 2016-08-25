@@ -12,7 +12,7 @@ http://central.sonatype.org/pages/apache-maven.html
 
     <name>me.andrz:map-builder</name>
     <description>Fluent builder for Maps in Java.</description>
-	<url>https://github.com/adjohnson916/map-builder-java</url>
+    <url>https://github.com/adjohnson916/map-builder-java</url>
 
     <developers>
         <developer>

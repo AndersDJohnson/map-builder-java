@@ -61,6 +61,10 @@ Map<String, Integer> m = new MapBuilder<String, Integer>(new LinkedHashMap<Strin
 ## Gradle
 
 ```gradle
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile 'me.andrz:map-builder:1.0.0'
 }

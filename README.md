@@ -4,8 +4,9 @@
 
 [Fluent][] [builder][] for `Map`s in Java.
 
-Easily initialize or modify [`java.util.Map`][map] instances with a [DRY][], [fluent][]-style [builder pattern][builder].
+Easily initialize (as expressions) or modify [`java.util.Map`][map] instances with a [DRY][], [fluent][]-style [builder pattern][builder].
 No more repeated variable names, [static or instance initializer blocks][initblocks], or [double brace initialization][2brace].
+At least until Java 9's [`Map.of`](http://download.java.net/java/jdk9/docs/api/java/util/Map.html#of--), and [`Map.ofEntries`](http://download.java.net/java/jdk9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) with [`Map.entry`](http://download.java.net/java/jdk9/docs/api/java/util/Map.html#entry-K-V-).
 
 ## Use
 
